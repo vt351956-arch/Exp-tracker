@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Expense Tracker (Firebase)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Advanced Expense Tracker</h1>
+
+    <div class="summary">
+      <div class="card">
+        <h3>Total Expense</h3>
+        <p>₹<span id="total-amount">0.00</span></p>
+      </div>
+
+      <div class="card">
+        <h3>This Month</h3>
+        <p>₹<span id="month-amount">0.00</span></p>
+      </div>
+
+      <div class="card">
+        <h3>Total Items</h3>
+        <p><span id="total-items">0</span></p>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <h2 id="form-title">Add New Expense</h2>
+      <input type="text" id="title" placeholder="Expense title" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <input type="date" id="date" />
+      <select id="category">
+        <option value="">Select Category</option>
+        <option value="Food">Food</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Travel">Travel</option>
+        <option value="Bills">Bills</option>
+        <option value="Others">Others</option>
+      </select>
+      <button id="addBtn">Add Expense</button>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search..." />
+      <select id="filter-category">
+        <option value="">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Travel">Travel</option>
+        <option value="Bills">Bills</option>
+        <option value="Others">Others</option>
+      </select>
+      <select id="filter-month">
+        <option value="">All Months</option>
+      </select>
+    </div>
+
+    <ul id="expense-list" class="expense-list"></ul>
+
+    <div class="chart-wrap">
+      <canvas id="expenseChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Firebase (compat) and Chart.js CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

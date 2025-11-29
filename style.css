@@ -1,0 +1,205 @@
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  padding: 25px;
+  color: #fff;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* SUMMARY CARDS */
+.summary {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.card {
+  flex: 1;
+  min-width: 160px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 18px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+.card h3 {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #00eaff;
+}
+
+/* INPUT SECTION */
+.input-section {
+  background: rgba(255,255,255,0.12);
+  padding: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(15px);
+  margin-bottom: 25px;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.input-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #00eaff;
+  text-shadow: 0 0 8px #00eaff;
+}
+
+.input-section input,
+.input-section select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.input-section input::placeholder {
+  color: #aaa;
+}
+
+.input-section button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00eaff, #00bcd4);
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0,255,255,0.4);
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(0,255,255,0.6);
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filters input,
+.filters select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* EXPENSE LIST */
+.expense-list {
+  list-style: none;
+}
+
+.expense-list li {
+  background: rgba(255,255,255,0.12);
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 0 15px rgba(0,255,255,0.15);
+  transition: 0.3s;
+}
+
+.expense-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.expense-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #00eaff;
+}
+
+.expense-meta {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.delete-btn {
+  background: #ff4b4b;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(255,0,0,0.4);
+}
+
+.delete-btn:hover {
+  background: #ff8080;
+  box-shadow: 0 0 15px rgba(255,0,0,0.6);
+}
+
+/* CHART */
+.chart-wrap {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(0,255,255,0.25);
+}
